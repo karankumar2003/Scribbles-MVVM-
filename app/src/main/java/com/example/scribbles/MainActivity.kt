@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.LinearLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,13 +16,16 @@ class MainActivity : AppCompatActivity(), RecyclerViewItemListener {
     lateinit var recyclerView: RecyclerView
     lateinit var adapter: RecyclerViewAdapter
     lateinit var input: EditText
+    lateinit var layoutManager: LinearLayoutManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         recyclerView = findViewById(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        layoutManager =LinearLayoutManager(this,RecyclerView.VERTICAL,true)
+        layoutManager.stackFromEnd = true
+        recyclerView.layoutManager = layoutManager
         adapter = RecyclerViewAdapter(this)
         recyclerView.adapter = adapter
         input = findViewById(R.id.inputText)

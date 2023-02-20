@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Scribbles</string>
+    <string name="edittext_hint">Start Typing</string>
+</resources>

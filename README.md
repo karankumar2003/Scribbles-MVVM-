@@ -8,10 +8,10 @@ This is a simple Note App built in Android using Kotlin that allows users to sav
 * Delete notes you no longer need
 
 # Libraries Used
-Room - for database management
-RecyclerView - for displaying notes in a list
-LiveData - for observing changes in the database
-ViewModel - for managing UI-related data in a lifecycle-aware way
+* Room - for database management  
+* RecyclerView - for displaying notes in a list  
+* LiveData - for observing changes in the database  
+* ViewModel - for managing UI-related data in a lifecycle-aware way  
 
 # Getting Started
 * Clone this repository: git clone https://github.com/karankumar2003/Scribbles

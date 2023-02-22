@@ -1,5 +1,5 @@
 # Scribbles
-Capture your thoughts and stay organized with this easy-to-use note-taking app.
+Capture your thoughts and stay organized with this easy-to-use note-taking app.  
 This is a simple Note App built in Android using Kotlin that allows users to save notes using Room database and display them in a RecyclerView.
 
 # Features
